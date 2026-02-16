@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <title>IRONMAN STORE</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -52,14 +58,68 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative flex items-center bg-[url(assets/banner-image.png)] bg-cover bg-no-repeat bg-center mx-auto py-10 border min-h-[90vh] md:min-h-[70vh]">
+    <section
+        class="relative flex items-center bg-[url(assets/banner-image.png)] bg-cover bg-no-repeat bg-center py-10 min-h-[90vh] md:min-h-[70vh]">
         <div class="z-0 absolute inset-0 bg-black/60"></div>
 
         <div class="z-10 relative space-y-5 mx-auto w-11/12 md:w-8/12 text-white hero-wrapper">
             <h1 class="font-semibold text-3xl md:text-7xl">Best Collection For You</h1>
-            <p class="md:w-6/12 text-lg md:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero iste consequatur itaque dolorem ipsum
+            <p class="md:w-6/12 text-lg md:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                iste consequatur itaque dolorem ipsum
                 unde nobis iure. Totam, adipisci in.</p>
             <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="bg-slate-50 py-10 md:py-20">
+        <div class="space-y-5 mx-auto w-11/12 md:w-8/12">
+            <h2 class="font-semibold text-2xl md:text-5xl text-center">Why Choose Us</h2>
+            <p class="mx-auto md:w-6/12 text-lg md:text-xl text-center">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iusto assumenda nostrum earum</p>
+
+            <!-- card-wrapper -->
+            <div class="gap-10 grid md:grid-cols-4 mt-16 md:mt-28">
+                <div class="bg-base-100 card-border w-fit card">
+                    <div class="card-body">
+                        <div class="bg-blue-100 shadow-md -mt-12 mb-5 p-3 border-4 border-white rounded-lg w-fit text-blue-500 text-xl">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h2 class="text-xl card-title">Fast Delivery</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-base-100 card-border w-fit card">
+                    <div class="card-body">
+                        <div class="bg-blue-100 shadow-md -mt-12 mb-5 p-3 border-4 border-white rounded-lg w-fit text-blue-500 text-xl">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h2 class="text-xl card-title">24/7 Support</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-base-100 card-border w-fit card">
+                    <div class="card-body">
+                        <div class="bg-blue-100 shadow-md -mt-12 mb-5 p-3 border-4 border-white rounded-lg w-fit text-blue-500 text-xl">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <h2 class="text-xl card-title">Secure Payment</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-base-100 card-border w-fit card">
+                    <div class="card-body">
+                        <div class="bg-blue-100 shadow-md -mt-12 mb-5 p-3 border-4 border-white rounded-lg w-fit text-blue-500 text-xl">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+                        <h2 class="text-xl card-title">Easy Return</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
