@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IRONMAN STORE</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3371df7186.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="bg-base-100 shadow-sm">
+        <div class="mx-auto md:w-8/12 navbar">
+            <div class="navbar-start">
+                <img class="w-12" src="assets/logo.png" alt="" />
+            </div>
+            <div class="hidden lg:flex navbar-center">
+                <ul class="space-x-4 px-1 text-base menu menu-horizontal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="text-xl"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="lg:hidden btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="top-12 right-0 z-1 bg-base-100 shadow mt-3 p-2 rounded-box w-32 menu menu-sm dropdown-content">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products -->
+    <section class="py-10 md:py-20">
+        <div class="space-y-5 mx-auto w-11/12 md:w-8/12">
+            <h2 class="font-semibold text-2xl md:text-5xl text-center">
+                Our Products
+            </h2>
+
+            <!-- Category Btn -->
+            <div id="category-btn-wrapper" class="flex justify-center gap-4 my-10">
+                <button class="rounded-full btn-outline btn btn-primary">All</button>
+            </div>
+
+            <!-- Products Wrapper -->
+            <div id="products-wrapper" class="gap-5 grid md:grid-cols-4 md:mt-10">
+                <!-- <div class="bg-base-100 shadow-sm card">
+                    <figure class="bg-slate-100 p-4 h-70">
+                        <img class="w-full h-full object-contain"
+                            src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="justify-between mb-3 card-actions">
+                            <div class="badge-outline badge">Category</div>
+                            <div class="badge-outline badge">⭐ 3.8</div>
+                        </div>
+                        <h2 class="card-title">
+                            Product Name
+                        </h2>
+                        <h2 class="font-bold text-lg">$156</h2>
+                        <div class="flex justify-between gap-3 mt-3">
+                            <button class="flex-1 rounded-xl btn-outline btn btn-primary"><i
+                                    class="fa-regular fa-eye"></i> Details</button>
+                            <button class="flex-1 rounded-xl btn btn-active btn-primary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Add</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- M<odal -->
+    <button class="btn" onclick="details_modal.showModal()">open modal</button>
+    <dialog id="details_modal" class="modal-bottom modal sm:modal-middle">
+        <!-- Modal Code -->
+        
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="bg-base-200">
+        <div class="mx-auto p-10 w-8/12 text-base-content footer sm:footer-horizontal">
+            <aside>
+                <img class="w-16" src="assets/logo.png" alt="" />
+                <p>
+                    Ironman Industries Ltd.
+                    <br />
+                    Providing reliable Products since 2023
+                </p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="products.js"></script>
+</body>
+
+</html>
