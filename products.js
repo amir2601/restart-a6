@@ -38,8 +38,6 @@ const loadProducts = (category) => {
 const displayProducts = (products) => {
   productsWrapper.innerHTML = "";
 
-  // const {title, price, category, image, rating} = products;
-
   products.forEach((product) => {
     productsWrapper.innerHTML += `
             <div class="bg-base-100 shadow-sm card flex flex-col">
